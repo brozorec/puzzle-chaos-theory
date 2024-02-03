@@ -30,7 +30,7 @@ Goal is to find out the index from the message space that was encrypted in the b
 
 
 
-## SOLUTION
+## Solution
 In this puzzle we can see that Bob has used same random number $k\$ is used for both $C_1\$ and $C_2\$. This means for different messages he has used same $C_1\$ component. In ElGamal encryption it is possible to compute ratio of any two ciphertext if their $C_1\$ is same,
 
 $m_1/m_2 = c_2^1/c_2^2\$
