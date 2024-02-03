@@ -41,7 +41,7 @@ Since there are 10 message with their ec points given, we can iterate through th
 
 Below is the `Rust` code for the attack.
 
-```
+```rust
     for (i, msg) in messages.iter().enumerate() {
         let c_prime = blob.c.1 - msg.0;
         let hsh = blob.c.hash_to_curve();
@@ -55,6 +55,11 @@ Below is the `Rust` code for the attack.
     }
 
 ```
+So the index 3 of the list of messages which `8492374892742` is the decrypted text.
+
+## Mitigation
+* Use different random number for $C_1\$ and $C_2\$ component of the ElGamal cyphertexts while encrypting a message.
+
 
 
 
