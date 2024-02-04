@@ -32,11 +32,6 @@ In this puzzle we can see that Bob has used same random number $k\$ is used for 
 
 $m_1/m_2 = c_2^1/c_2^2\$
 
-Since you cannot directly divide points on an elliptic curve as you would with numbers in a field, the concept of a "ratio" is converted through point subtraction, using the additive homomorphism of the elliptic curve group.On elliptic curves this translates to ,
-
-$m_1 = C_1 - C_2 + m_2 \$
-
-
 Since there are 10 message with their ec points given, we can iterate through the messages and check which message passes the bilinear pairing check.
 
 Below is the `Rust` code for the attack.
